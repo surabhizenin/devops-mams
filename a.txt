@@ -1,0 +1,4 @@
+cd %USERPROFILE%\Downloads
+dir cloudflared*
+cloudflared-windows-amd64.exe tunnel --url http://localhost:8080
+
