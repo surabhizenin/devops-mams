@@ -2,3 +2,6 @@ cd %USERPROFILE%\Downloads
 dir cloudflared*
 cloudflared-windows-amd64.exe tunnel --url http://localhost:8080
 
+github > settings > create webhhooks paste url/github-webhook/ > content type = application.json
+localhost > new item > pipeline > settings > system > jenkins url = past url > save > back > triggers = github hook triggers > pipeline = script from scm > Git > paste github url > apply > save 
+github > app.java > do changes > check done or no
