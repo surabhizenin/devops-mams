@@ -93,9 +93,15 @@
 </head>
 
 <body>
+    <p> FROM httpd:latest
+COPY index.html /usr/local/apache2/htdocs/ </p>
 <div docker build -t resume2:1.0 .> </div>
     <div docker run -d --name container1 -p 9090:80 resume2:1.0 > </div>
-    
+    <p> docker tag image_id surabhizenin/resume2:1.0 
+    docker push surabhizenin/resume2:1.0
+    docker pull aimanaygul/resume2:1.0
+    docker run -d -p 9091:80 aimanagyul/resume2:1.0 
+    </p>
 <div class="resume">
 
     <div class="left">
