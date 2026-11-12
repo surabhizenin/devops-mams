@@ -1,39 +1,173 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jane Doe - Resume</title>
-    <link href="styles.css" rel="stylesheet">
+    <title>Jane Doe | Resume</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef1f5;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .resume {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            display: flex;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .left {
+            background: #263849;
+            color: white;
+            width: 35%;
+            padding: 30px;
+        }
+
+        .right {
+            width: 65%;
+            padding: 35px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 5px;
+            color: #263849;
+        }
+
+        .left h2 {
+            color: #8ed6cf;
+            border-bottom: 1px solid #8ed6cf;
+            padding-bottom: 8px;
+        }
+
+        .right h2 {
+            color: #263849;
+            border-bottom: 2px solid #8ed6cf;
+            padding-bottom: 8px;
+        }
+
+        p, li {
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .role {
+            color: #579b96;
+            font-weight: bold;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .profile {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #8ed6cf;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #263849;
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 650px) {
+            .resume {
+                flex-direction: column;
+            }
+
+            .left, .right {
+                width: auto;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <h1>Jane Doe</h1>
-        <address>
-            <p>Email: jane.doe@example.com</p>
-            <p>Phone: 555-555-5555</p>
-            <p>Location: City, State</p>
-        </address>
-    </header>
 
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <article>
-            <h3>Web Developer</h3>
-            <p>Freelance, 2008 - Present</p>
-            <ul>
-                <li>Developed secure web applications and backend databases.</li>
-                <li>Created e-commerce backend systems for startups.</li>
-            </ul>
-        </article>
-    </section>
+<div class="resume">
 
-    <section id="skills">
-        <h2>Technical Skills</h2>
+    <div class="left">
+
+        <div class="profile">JD</div>
+
+        <h2>Contact</h2>
+        <p>Email: jane.doe@email.com</p>
+        <p>Phone: +1 234 567 890</p>
+        <p>Location: New York, USA</p>
+
+        <h2>Skills</h2>
         <ul>
-            <li>Languages: HTML, CSS, JavaScript, PHP, Ruby</li>
-            <li>Frameworks: React, Node.js, Ruby on Rails</li>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>Communication</li>
+            <li>Problem Solving</li>
         </ul>
-    </section>
+
+        <h2>Languages</h2>
+        <ul>
+            <li>English</li>
+            <li>French</li>
+            <li>Spanish</li>
+        </ul>
+
+    </div>
+
+    <div class="right">
+
+        <h1>Jane Doe</h1>
+        <p class="role">WEB DEVELOPER</p>
+
+        <h2>About Me</h2>
+        <p>
+            Creative and passionate web developer with a strong interest
+            in building beautiful, responsive and user-friendly websites.
+            Always eager to learn new technologies and improve my skills.
+        </p>
+
+        <h2>Education</h2>
+        <h3>Bachelor of Computer Science</h3>
+        <p>ABC University | 2022 - 2026</p>
+
+        <h3>High School</h3>
+        <p>XYZ School | 2020 - 2022</p>
+
+        <h2>Experience</h2>
+        <h3>Web Development Intern</h3>
+        <p>Tech Solutions | 2025 - 2026</p>
+        <ul>
+            <li>Designed responsive web pages.</li>
+            <li>Worked with HTML, CSS and JavaScript.</li>
+            <li>Collaborated with team members on projects.</li>
+        </ul>
+
+        <h2>Projects</h2>
+        <h3>Personal Portfolio Website</h3>
+        <p>Created a personal website to showcase skills and projects.</p>
+
+        <h3>Student Management System</h3>
+        <p>Developed a basic system to manage student records.</p>
+
+        <h2>Achievements</h2>
+        <ul>
+            <li>Completed Web Development Certification.</li>
+            <li>Participated in coding competitions.</li>
+        </ul>
+
+    </div>
+
+</div>
+
 </body>
-</html>   
+</html>
